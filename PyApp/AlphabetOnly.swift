@@ -8,7 +8,7 @@
 import Foundation
 
 struct AlphabetOnlyStrategy: ParseStrategy/*, ParseableFormatStyle*/ {
-    var allowed = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',.?!"
+    var allowed = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',.?!`˜ˆ:;"
     
     
     func parse(_ value: String) -> String {

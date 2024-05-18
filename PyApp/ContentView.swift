@@ -60,7 +60,7 @@ struct ContentView: View {
             }
         }
         .padding()
-        .navigationTitle("Slice of Pi")
+        .navigationTitle("Memorize Pi App")
         .toolbar {
             Button("Toggle Answers", systemImage: "eye") {
                 showingAnswers.toggle()
@@ -69,7 +69,7 @@ struct ContentView: View {
             
             Button("Copy", systemImage: "doc.on.doc", action: copyToClipboard)
             
-            ShareLink(item: viewModel.outputString, preview: SharePreview("Pi data"))
+            ShareLink(item: viewModel.outputString, preview: SharePreview("Pi to Memorize"))
         }
     }
     
