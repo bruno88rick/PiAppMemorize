@@ -11,6 +11,10 @@
 		B6DC6C942BF90B39008AB46C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DC6C932BF90B39008AB46C /* ContentView.swift */; };
 		B6DC6C962BF90B3B008AB46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6DC6C952BF90B3B008AB46C /* Assets.xcassets */; };
 		B6DC6C992BF90B3B008AB46C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6DC6C982BF90B3B008AB46C /* Preview Assets.xcassets */; };
+		B6DC6CA12BF90B74008AB46C /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DC6CA02BF90B74008AB46C /* Bundle-Decodable.swift */; };
+		B6DC6CA32BF90B97008AB46C /* pi5000.txt in Resources */ = {isa = PBXBuildFile; fileRef = B6DC6CA22BF90B97008AB46C /* pi5000.txt */; };
+		B6DC6CA52BF90BB9008AB46C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DC6CA42BF90BB9008AB46C /* ViewModel.swift */; };
+		B6DC6CA72BF91792008AB46C /* AlphabetOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DC6CA62BF91792008AB46C /* AlphabetOnly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		B6DC6C952BF90B3B008AB46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6DC6C982BF90B3B008AB46C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B6DC6C9A2BF90B3B008AB46C /* PyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PyApp.entitlements; sourceTree = "<group>"; };
+		B6DC6CA02BF90B74008AB46C /* Bundle-Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		B6DC6CA22BF90B97008AB46C /* pi5000.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pi5000.txt; sourceTree = "<group>"; };
+		B6DC6CA42BF90BB9008AB46C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B6DC6CA62BF91792008AB46C /* AlphabetOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetOnly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 			children = (
 				B6DC6C912BF90B39008AB46C /* PyAppApp.swift */,
 				B6DC6C932BF90B39008AB46C /* ContentView.swift */,
+				B6DC6CA42BF90BB9008AB46C /* ViewModel.swift */,
+				B6DC6CA62BF91792008AB46C /* AlphabetOnly.swift */,
+				B6DC6CA02BF90B74008AB46C /* Bundle-Decodable.swift */,
+				B6DC6CA22BF90B97008AB46C /* pi5000.txt */,
 				B6DC6C952BF90B3B008AB46C /* Assets.xcassets */,
 				B6DC6C9A2BF90B3B008AB46C /* PyApp.entitlements */,
 				B6DC6C972BF90B3B008AB46C /* Preview Content */,
@@ -127,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6DC6CA32BF90B97008AB46C /* pi5000.txt in Resources */,
 				B6DC6C992BF90B3B008AB46C /* Preview Assets.xcassets in Resources */,
 				B6DC6C962BF90B3B008AB46C /* Assets.xcassets in Resources */,
 			);
@@ -141,6 +154,9 @@
 			files = (
 				B6DC6C942BF90B39008AB46C /* ContentView.swift in Sources */,
 				B6DC6C922BF90B39008AB46C /* PyAppApp.swift in Sources */,
+				B6DC6CA72BF91792008AB46C /* AlphabetOnly.swift in Sources */,
+				B6DC6CA52BF90BB9008AB46C /* ViewModel.swift in Sources */,
+				B6DC6CA12BF90B74008AB46C /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +216,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -257,7 +273,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -279,6 +295,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Remember for Pi";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +324,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Remember for Pi";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
